@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 50px; color: rgb(251, 255, 1)">TasteTrove</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" style="color: lightgray;">Home</a></li>
+                <li><a href="#menu" style="color: lightgray;">Menu</a></li>
+                <li><a href="#about" style="color: lightgray;">About Us</a></li>
+                <li><a href="#contact" style="color: lightgray;">Contact</a></li>
+                <li><button id="login-btn" style="color: white; background-color: #333; border: none; padding: 5px 10px; cursor: pointer;">Login</button></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="home" style="background-image: url('food background.jpg'); background-size: cover;">
+        <div class="hero">
+            <h2>Welcome to TasteTrove</h2>
+            <p style="font-size: 30px; color: skyblue;">Enjoy delicious food with us!</p>
+        </div>
+    </section>
+    <section id="menu" style="display: none; background-color: #333;">
+        <h2 style="color: lightgray;">Menu</h2>
+        <div class="menu-item">
+            <img src="chicken biriyani.jpg" alt="Food item 1">
+            <h3 style="font-size: 24px; color: rgb(2, 169, 235), 0.952;">Chicken Biriyani</h3>
+            <p style="font-size: 18px; color: lightgray;">"Chicken Biryani" is a classic Indian dish known for its aromatic flavors and rich taste. It is made with long-grain basmati rice, marinated chicken pieces, and a blend of spices. The dish is typically cooked in layers, with the marinated chicken cooked separately and then layered with partially cooked rice. Each layer is infused with spices, including cumin, cardamom, cinnamon, and cloves, along with fresh herbs like cilantro and mint. The layers are then steamed together, allowing the flavors to meld and the rice to absorb the fragrant spices. Chicken Biryani is often served with raita (a yogurt-based side dish) and is a favorite at festive occasions and celebrations.</p>
+            <span class="price" style="font-size: 24px; color: rgb(2, 169, 235);">&#8377; 250</span>
+            <button class="order-btn" data-item="Food item 1" style="color: lightgray; background-color: #f30909;">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="Fried Rice.jpg" alt="Food item 2">
+            <h3 style="font-size: 24px; color: rgb(2, 169, 235), 0.952;">Fried Rice</h3>
+            <p style="font-size: 18px; color: lightgray;">"Fried Rice" is a delightful Asian dish made with stir-fried rice, vegetables, and proteins, seasoned with soy sauce and aromatic spices. This dish offers a harmonious blend of flavors and textures, with each bite delivering a satisfying combination of savory and umami notes. The fluffy rice is complemented by the crunch of vegetables and the richness of eggs, creating a dish that is both comforting and flavorful. Fried Rice is a versatile dish that can be enjoyed as a main course or as a side dish, making it a favorite among those looking for a hearty and delicious meal.</p>
+            <span class="price" style="font-size: 24px; color: rgb(2, 169, 235);">&#8377; 150</span>
+            <button class="order-btn" data-item="Food item 2" style="color: lightgray; background-color: #f30909;">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="Bbq pizza.jpg" alt="Food item 3">
+            <h3 style="font-size: 24px; color: rgb(2, 169, 235), 0.952;">BBQ Sausage Pizza</h3>
+            <p style="font-size: 18px; color: lightgray;">"BBQ Sausage Pizza" is a mouthwatering combination of smoky barbecue sauce, savory sausage, and melted cheese on a golden crust. This pizza is a flavor explosion, with each bite delivering a perfect balance of tangy, sweet, and spicy flavors. Topped with sliced red onions, bell peppers, and mushrooms, this pizza offers a delightful medley of textures and tastes. Perfect for pizza lovers seeking a bold and satisfying dining experience.</p>
+            <span class="price" style="font-size: 24px; color: rgb(2, 169, 235);">&#8377; 220</span>
+            <button class="order-btn" data-item="Food item 3" style="color: lightgray; background-color: #f30909;">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="mushroom noodles.JPG" alt="Food item 4">
+            <h3 style="font-size: 24px; color: rgb(2, 169, 235), 0.952;">Mushroom Chilli Noodles</h3>
+            <p style="font-size: 18px; color: lightgray;">"Mushroom Chilli Noodles" is a savory and spicy dish that combines stir-fried noodles with mushrooms, bell peppers, onions, and a flavorful chili sauce. The dish is typically made by first cooking the noodles until they are al dente, then stir-frying them with sliced mushrooms, bell peppers, and onions in a hot wok. The chili sauce, which can vary in spiciness depending on personal preference, is then added to the noodles and vegetables, giving the dish its signature spicy flavor. Mushroom Chilli Noodles are often garnished with fresh cilantro and green onions before serving, adding a fresh and vibrant touch to the dish.</p>
+            <span class="price" style="font-size: 24px; color: rgb(2, 169, 235);">&#8377; 180</span>
+            <button class="order-btn" data-item="Food item 4" style="color: lightgray; background-color: #f30909;">Order</button>
+        </div>
+        <div class="menu-item">
+            <img src="Paneer burger.jpg" alt="Food item 5">
+            <h3 style="font-size: 24px; color: rgb(2, 169, 235), 0.952;">Spicy Paneer Burger</h3>
+            <p style="font-size: 18px; color: lightgray;">"Spicy Paneer Noodles" is a tantalizing blend of soft paneer, stir-fried noodles, and crisp vegetables, all bathed in a spicy, aromatic sauce. This fusion dish combines the best of Indian and Chinese flavors, offering a symphony of tastes and textures in every bite. Perfectly marinated paneer adds a creamy richness, while the fiery sauce brings a bold kick. Garnished with fresh cilantro, this dish is a spicy delight for those craving a flavorful and satisfying meal.</p>
+            <span class="price" style="font-size: 24px; color: rgb(2, 169, 235);">&#8377; 170</span>
+            <button class="order-btn" data-item="Food item 5" style="color: lightgray; background-color: #f30909;">Order</button>
+     </div>        
+    <button onclick="toggleLoginForm()">Next</button>
+    </section>
+    <section id="about" style="display: none; background-color: #333;">
+        <h2 style="color: lightgray;">About Us</h2>
+       <p style="color: lightgray;">
+            Welcome to "Culinary Delights," where passion meets flavor! Our restaurant was founded in 2010 by Chef John Smith, a culinary enthusiast with a vision to create a dining experience that celebrates the art of cooking.
+            
+            Our Mission
+            
+            At Culinary Delights, we are committed to serving delicious and innovative dishes that showcase the finest ingredients. Our mission is to provide a memorable dining experience that delights the senses and leaves a lasting impression.
+            
+            Cuisine
+            
+            Our menu features a blend of contemporary and traditional dishes inspired by global flavors. From savory appetizers to indulgent desserts, each dish is crafted with care and attention to detail.
+            
+            Chef John Smith
+            
+            Chef John Smith leads our talented culinary team with his passion for creating culinary masterpieces. With over 20 years of experience in the culinary industry, Chef John brings a wealth of knowledge and creativity to our kitchen.
+            
+            Local Sourcing
+            
+            We take pride in sourcing ingredients locally whenever possible, supporting local farmers and producers. This allows us to offer fresh, seasonal ingredients that enhance the flavor and quality of our dishes.
+            
+            Community Involvement
+            
+            At Culinary Delights, we believe in giving back to the community. We regularly participate in local charity events and fundraisers, supporting causes that are important to us and our community.
+            
+            Awards and Recognition
+            
+            Over the years, Culinary Delights has received numerous awards and accolades for our exceptional food, service, and ambiance. We are honored to be recognized for our commitment to excellence in dining.
+            
+            Customer Experience
+            
+            Our goal is to provide an exceptional dining experience for every guest. From the moment you walk through our doors, you will be greeted with warmth and hospitality, making you feel right at home.
+            
+            Future Plans
+            
+            As we look to the future, we are excited to continue innovating and expanding our menu to offer new and exciting dishes. We also plan to enhance our dining experience with special events and promotions.
+            
+            Thank you for choosing Culinary Delights. We look forward to serving you and creating memorable moments together!
+        </p> 
+        <button onclick="toggleLoginForm()">Next</button>
+    </section>
+    <section id="contact" style="display: none; background-color: #333;">
+        <h2 style="color: lightgray;">Contact</h2>
+<p style="color: lightgray;">Email: tastetrove.2024@gmail.com<br>Phone No.: 8754386498</p>        
+    </section>
+    <footer style="background-color: #333; color: lightgray; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2024 TasteTrove. All Rights Reserved.</p>
+    </footer>
+    <div id="login-form" class="login-form" style="display: none; background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 999; padding-top: 100px; text-align: center;">
+        <div style="background-color: #fff; padding: 20px; border-radius: 5px; display: inline-block;">
+            <h3>Login</h3>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Sign In</button>
+            </form>
+            <p><a href="#">Forgot password?</a></p>
+            <p>New to TasteTrove? <button onclick="toggleSignupForm()">Sign up</button></p>
+            <button onclick="toggleLoginForm()" style="background-color: #333; color: white; border: none; padding: 5px 10px; cursor: pointer;">Close</button>
+        </div>
+    </div>
+    <div id="signup-form" class="login-form" style="display: none; background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 999; padding-top: 100px; text-align: center;">
+        <div style="background-color: #fff; padding: 20px; border-radius: 5px; display: inline-block;">
+            <h3>Sign Up</h3>
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button onclick="toggleSignupForm()" style="background-color: #333; color: white; border: none; padding: 5px 10px; cursor: pointer;">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
